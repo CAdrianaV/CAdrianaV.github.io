@@ -1,0 +1,98 @@
+/* 
+    Created on : 08-nov-2018, 23:31:34
+    Author     : Villavicencio
+*/			
+* {
+    margin:0px;
+    padding:0px;
+}
+
+html, body{ 
+  min-width:100%;
+}
+
+#header {
+    margin:auto;
+    width:100%;
+    font-family:Lato,Helvetica,Arial,sans-serif;
+}
+
+ul, ol {
+    list-style:none;
+}
+
+.nav > li {
+    float:left;
+}
+
+.nav li a {
+    background-color: #528A45;
+    color:#000000;
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+}
+
+.nav li a:hover {
+    background-color:#434343;
+    color:#FFFFFF;
+}
+
+.nav li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+}
+
+.nav li:hover > ul {
+    display:block;
+}
+
+.nav li ul li {
+    position:relative;
+}
+
+.nav li ul li ul {
+    right:-140px;
+    top:0px;
+}
+
+header {
+  background: #528A45;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+.wrapper {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  overflow:hidden;
+}
+
+nav {
+  float: left; /* Desplazamos el nav hacia la izquierda */
+}
+ 
+nav ul {
+  list-style: none;
+  overflow: hidden; /* Limpiamos errores de float */
+}
+ 
+nav ul li {
+  float: left;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+ 
+nav ul li a {
+  display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+  padding: 35px;
+  color: #fff;
+  text-decoration: none;
+}
+ 
+nav ul li:hover {
+  background: #3ead47;
+}
